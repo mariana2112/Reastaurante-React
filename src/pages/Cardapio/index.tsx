@@ -1,5 +1,12 @@
+import styles from './Cardapio.module.scss';
+import Logo from '../../assets/logo.png';
+
 export function Cardapio(){
     return(
-        <div>Cardápio dio Restaurante</div>
+        <main>
+            <nav className={styles.menu}>
+                <img src={Logo} alt="Logo" />
+            </nav>
+        </main>
     );
 }

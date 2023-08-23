@@ -12,6 +12,9 @@ export function Cardapio(){
                     "A casa do codigo e da massa"
                 </div>
             </header>
+            <section>
+                <h3>Cardapio</h3>
+            </section>
         </main>
     );
 }

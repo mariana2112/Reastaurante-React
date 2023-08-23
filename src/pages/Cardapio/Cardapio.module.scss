@@ -1,7 +1,23 @@
+@import 'styles/_variaveis.scss';
+
 .menu{
-    padding: 1.2vw 4vw;
-    background-color: rgb(24, 24, 24);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.4vw;
+    padding: 1vw  $padding-hotizontal;
+    background-color: rgb(19, 18, 18);
+}
+
+.header{
+    background-image: url('/assets/cardapio/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0 $padding-hotizontal;
+
+    &__text{
+        color: white;
+        font-size: 5rem;
+        min-width: 400px;
+        width: 40%;
+    }
 }

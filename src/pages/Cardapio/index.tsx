@@ -1,7 +1,10 @@
 import styles from './Cardapio.module.scss';
 import Logo from 'assets/logo.png';
+import Buscador from './Buscador';
+import { useState } from 'react';
 
 export function Cardapio(){
+    const [busca,  setBusca] = useState("");
     return(
         <main>
             <nav className={styles.menu}>
@@ -12,8 +15,9 @@ export function Cardapio(){
                     "A casa do codigo e da massa"
                 </div>
             </header>
-            <section>
-                <h3>Cardapio</h3>
+            <section className={styles.cardapio}>
+                <h3 className={styles.cardapio__titulo} >Cardapio</h3>
+                <Buscador busca={busca} setBusca={setBusca} />
             </section>
         </main>
     );

@@ -9,7 +9,7 @@ interface Iopcao{
     label: string;
 }*/
 
-export default function Filtros(opcao: Iopcao){
+export default function Filtros(){
     return(
         <div className={styles.filtros}>
             {filtros.map((opcao) => (

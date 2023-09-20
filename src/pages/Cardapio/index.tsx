@@ -10,18 +10,21 @@ export function Cardapio(){
         <main>
             <nav className={styles.menu}>
                 <img src={Logo} alt="Logo" />
+                <Buscador busca={busca} setBusca={setBusca} />
             </nav>
-            <header className={styles.header}>
-                <div className={styles.header__text}>
-                    "A casa do codigo e da massa"
+                
+            <div className={styles.text1}>
+                    Best food in the town
                 </div>
-            </header>
+                <div className={styles.text}>
+                    "The house of code and dough"
+                </div>
+          
             <section className={styles.cardapio}>
                 <h3 className={styles.cardapio__titulo} >Cardapio</h3>
                 <div className={styles.cardapio__filtros}>
                     <Filtros/>
                 </div>
-                <Buscador busca={busca} setBusca={setBusca} />
             </section>
 
         </main>

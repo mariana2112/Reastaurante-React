@@ -13,7 +13,7 @@ export default function Buscador({busca, setBusca}: Props){
             <input 
             value={busca}
             onChange={(evento) => setBusca(evento.target.value)}
-            placeholder='O que você está buscando?'
+            placeholder='What are you looking for ?'
             />
             <CgSearch
             size={20}

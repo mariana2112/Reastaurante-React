@@ -11,7 +11,7 @@ interface Iopcao{
 
 export default function Filtros(){
     return(
-        <div className={styles.filtros}>
+        <div className={styles.filtro}>
             {filtros.map((opcao) => (
                 <button className={styles.filtro__filtro} key={opcao.id}>
                     {opcao.label}
